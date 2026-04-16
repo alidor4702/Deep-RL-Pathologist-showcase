@@ -24,7 +24,9 @@
 
 This repository is a **public showcase** of the project.
 
-The **full codebase, architecture details, training pipeline, reward design, experiment configuration, and internal documentation are intentionally not included here** while the implementation remains private.
+The **full codebase, architecture details, training pipeline, reward design, experiment configuration, and internal documentation are intentionally not included here** because continued work toward a research publication is still ongoing.
+
+This public version is meant to share the direction of the work, selected visual outputs, and headline results without exposing implementation details that are still part of active research and development.
 
 What is included:
 
@@ -60,6 +62,8 @@ Pathologists do not inspect every pixel uniformly. They **scan**, **focus**, and
 4. Produce a slide-level tumor vs. normal decision
 
 The project focuses on pathology-specific visual search and sequential decision-making for **whole slide diagnosis**.
+
+At a high level, the project combines **deep learning** and **reinforcement learning**. A deep visual encoder extracts information from image patches, while the RL component learns a sequential policy for where to move, when to change zoom, how to accumulate evidence over time, and when to issue a slide-level decision. The public repository intentionally stays at that level and does not expose the private implementation.
 
 ---
 
@@ -139,7 +143,7 @@ Tumor sizes range from isolated tumor cells to large macro-metastases.
 
 This showcase repository is meant for **research presentation and portfolio use**.
 
-If you are interested in the project, the publicly visible material here is limited to non-sensitive outputs and summary information.
+If you are interested in the project, the publicly visible material here is limited to non-sensitive outputs and summary information while continued work for a research publication is still in progress.
 
 ---
 
