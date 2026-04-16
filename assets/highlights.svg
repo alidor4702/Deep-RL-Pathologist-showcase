@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Deep-RL-Pathologist public showcase highlights</title>
+  <desc id="desc">Summary graphic with headline metrics and a high-level workflow for the Deep-RL-Pathologist showcase repository.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4efe6" />
+      <stop offset="100%" stop-color="#dbe7ea" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffdf9" />
+      <stop offset="100%" stop-color="#f5f6f3" />
+    </linearGradient>
+    <style>
+      .eyebrow { font: 700 24px 'Helvetica Neue', Arial, sans-serif; letter-spacing: 3px; fill: #7b5b36; }
+      .title { font: 700 66px 'Helvetica Neue', Arial, sans-serif; fill: #142a2f; }
+      .body { font: 400 26px 'Helvetica Neue', Arial, sans-serif; fill: #28424a; }
+      .card-title { font: 700 22px 'Helvetica Neue', Arial, sans-serif; letter-spacing: 2px; fill: #6b7f86; }
+      .card-value { font: 700 58px 'Helvetica Neue', Arial, sans-serif; fill: #102a43; }
+      .card-note { font: 400 22px 'Helvetica Neue', Arial, sans-serif; fill: #4e6570; }
+      .flow-title { font: 700 22px 'Helvetica Neue', Arial, sans-serif; fill: #6c5030; letter-spacing: 2px; }
+      .flow-text { font: 600 28px 'Helvetica Neue', Arial, sans-serif; fill: #23383f; }
+      .small { font: 400 20px 'Helvetica Neue', Arial, sans-serif; fill: #486069; }
+      .footer { font: 400 20px 'Helvetica Neue', Arial, sans-serif; fill: #5b7078; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="1320" cy="130" r="220" fill="#c8d9da" opacity="0.35" />
+  <circle cx="220" cy="760" r="240" fill="#eadcc4" opacity="0.45" />
+  <rect x="72" y="72" width="1456" height="756" rx="34" fill="url(#panel)" stroke="#d8d9d3" stroke-width="2" />
+
+  <text x="120" y="145" class="eyebrow">PUBLIC SHOWCASE</text>
+  <text x="120" y="225" class="title">Deep-RL-Pathologist</text>
+  <text x="120" y="280" class="body">Reinforcement learning for whole slide image navigation and slide-level pathology decision support.</text>
+  <text x="120" y="320" class="body">Code, architecture, and training implementation are intentionally private in this public repository.</text>
+
+  <rect x="120" y="390" width="300" height="170" rx="24" fill="#eef4f6" />
+  <rect x="440" y="390" width="300" height="170" rx="24" fill="#eff2ea" />
+  <rect x="760" y="390" width="300" height="170" rx="24" fill="#f6efe5" />
+  <rect x="1080" y="390" width="300" height="170" rx="24" fill="#edf2f5" />
+
+  <text x="148" y="435" class="card-title">ACCURACY</text>
+  <text x="148" y="505" class="card-value">90.1%</text>
+  <text x="148" y="540" class="card-note">CAMELYON16 test set</text>
+
+  <text x="468" y="435" class="card-title">SPECIFICITY</text>
+  <text x="468" y="505" class="card-value">100%</text>
+  <text x="468" y="540" class="card-note">Zero false positives on normals</text>
+
+  <text x="788" y="435" class="card-title">FALSE POSITIVES</text>
+  <text x="788" y="505" class="card-value">0</text>
+  <text x="788" y="540" class="card-note">At the selected operating point</text>
+
+  <text x="1108" y="435" class="card-title">TIME PER SLIDE</text>
+  <text x="1108" y="505" class="card-value">18-39s</text>
+  <text x="1108" y="540" class="card-note">Public-safe runtime summary</text>
+
+  <text x="120" y="640" class="flow-title">HIGH-LEVEL FLOW</text>
+
+  <rect x="120" y="670" width="250" height="90" rx="18" fill="#fff7ec" stroke="#d8c7ac" stroke-width="2" />
+  <rect x="470" y="670" width="250" height="90" rx="18" fill="#eef6f7" stroke="#bfd4d7" stroke-width="2" />
+  <rect x="820" y="670" width="250" height="90" rx="18" fill="#eef3ea" stroke="#c5d4c0" stroke-width="2" />
+  <rect x="1170" y="670" width="250" height="90" rx="18" fill="#f4eff8" stroke="#d2c4e0" stroke-width="2" />
+
+  <text x="165" y="724" class="flow-text">Whole slide image</text>
+  <text x="530" y="724" class="flow-text">RL agent explores</text>
+  <text x="870" y="724" class="flow-text">Evidence accumulates</text>
+  <text x="1220" y="724" class="flow-text">Slide-level decision</text>
+
+  <path d="M370 715 L450 715" stroke="#8e9da2" stroke-width="6" stroke-linecap="round" />
+  <path d="M720 715 L800 715" stroke="#8e9da2" stroke-width="6" stroke-linecap="round" />
+  <path d="M1070 715 L1150 715" stroke="#8e9da2" stroke-width="6" stroke-linecap="round" />
+  <path d="M450 715 l-18 -12 l0 24 z" fill="#8e9da2" />
+  <path d="M800 715 l-18 -12 l0 24 z" fill="#8e9da2" />
+  <path d="M1150 715 l-18 -12 l0 24 z" fill="#8e9da2" />
+
+  <text x="120" y="804" class="small">Tumor-size recall snapshot: macro 100% | micro 81.5% | ITC 50%</text>
+  <text x="120" y="840" class="footer">This asset was created for public presentation and intentionally avoids architecture, training, and implementation details.</text>
+</svg>
